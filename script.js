@@ -7,7 +7,8 @@ function decimalToBinary(num) {
 	if(num==1)
 		ans+=1;
     ans= reverseString(ans);
-    console.log(ans);
+    // console.log(ans);
+	return ans;
 }
 
 function reverseString(str) {
