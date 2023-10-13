@@ -6,17 +6,10 @@ function decimalToBinary(num) {
 	}
 	if(num==1)
 		ans+=1;
-    ans= reverseString(ans);
+    ans= ans.split("").reverse().join("");
     // console.log(ans);
 	return ans;
 }
 
-function reverseString(str) {
-  let reversed = '';
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
-  }
-  return reversed;
-}
 decimalToBinary(33);
 window.decimalToBinary = decimalToBinary;
